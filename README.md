@@ -14,7 +14,7 @@ A lightweight static homepage for Sale Ready Austin, built with semantic HTML, m
     /js
       main.js
     /images
-      logo.svg
+      logo.png
       /gallery
         project-01-before.svg
         project-01-after.svg
@@ -32,7 +32,7 @@ A lightweight static homepage for Sale Ready Austin, built with semantic HTML, m
 
 ## Where to swap the logo
 
-- Replace `/assets/images/logo.svg` with the final logo file.
+- Replace `/assets/images/logo.png` with the final logo file.
 - The same file is used in the header, hero panel, and footer.
 - If the final filename changes, update the `img` references in `/index.html` and the JSON-LD logo URL in the `<head>`.
 
