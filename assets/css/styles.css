@@ -534,6 +534,7 @@ button {
 .footer-brand img {
   width: 108px;
   height: 108px;
+  object-fit: contain;
 }
 
 .contact-card dl {
@@ -564,10 +565,6 @@ button {
   display: flex;
   gap: 1rem;
   align-items: center;
-}
-
-.footer-brand img {
-  object-fit: contain;
 }
 
 .footer-brand p,
