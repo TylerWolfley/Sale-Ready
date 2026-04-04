@@ -1,27 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
   <title>Sale Ready logo</title>
-  <desc>Shield logo with stacked Sale Ready wordmark.</desc>
+  <desc>Stacked SALE READY wordmark on banner panels above a chevron mark.</desc>
   <defs>
-    <path id="shield" d="M86 96Q256 42 426 96L416 270Q414 347 370 399L256 470L142 399Q98 347 96 270Z" />
-    <path id="banner" d="M54 218Q256 176 458 218L442 352Q256 308 70 352Z" />
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.18" />
-    </filter>
+    <style>
+      .panel {
+        fill: #fff;
+        stroke: #111;
+        stroke-linejoin: round;
+        stroke-width: 14;
+      }
+
+      .chevron {
+        fill: none;
+        stroke: #111;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 24;
+      }
+
+      .wordmark {
+        fill: #111;
+        font-family: "Arial Black", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 220px;
+        letter-spacing: 10px;
+        text-anchor: middle;
+      }
+    </style>
   </defs>
 
-  <g filter="url(#shadow)">
-    <use href="#shield" fill="#000000" stroke="#ffffff" stroke-width="28" stroke-linejoin="round" />
-    <use href="#shield" fill="none" stroke="#000000" stroke-width="14" stroke-linejoin="round" />
-    <use href="#shield" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" />
+  <path class="panel" d="M254 160H946L974 486H226Z" />
+  <path class="panel" d="M164 526H1036L1008 836L820 804H380L192 836Z" />
+  <path class="chevron" d="M344 848L600 1004L856 848" />
+  <path class="chevron" d="M274 828L600 1048L926 828" />
 
-    <path d="M148 344Q256 326 364 344L256 432Z" fill="#000000" />
-
-    <use href="#banner" fill="#ffffff" stroke="#000000" stroke-width="14" stroke-linejoin="round" />
-    <use href="#banner" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" />
-
-    <g fill="#000000" stroke="#ffffff" stroke-width="18" paint-order="stroke fill" stroke-linejoin="round" font-family="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" text-anchor="middle">
-      <text x="256" y="202" font-size="134" letter-spacing="-6" transform="skewX(-6)">SALE</text>
-      <text x="256" y="320" font-size="146" letter-spacing="-7" transform="skewX(-6)">READY</text>
-    </g>
-  </g>
+  <path d="M246 190H954" fill="none" stroke="#111" stroke-linecap="round" stroke-width="12" />
+  <text class="wordmark" x="600" y="486">SALE</text>
+  <text class="wordmark" x="600" y="778">READY</text>
 </svg>
